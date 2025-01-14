@@ -1,0 +1,41 @@
+.main{
+    background-color:black;
+    height:560px;
+    width:600px;
+    margin:50px 300px;
+    border:10px solid grey;
+    text-align:center;
+}
+
+.white{
+    background-color:white;
+    width:75px;
+    height:70px;
+    float:left;
+}
+.black{
+    background-color:black;
+    width:75px;
+    height:70px;
+    float:left;
+}
+.white .fa-regular {
+    color:black;
+    font-size:50px;
+    
+}
+.black .fa-regular{
+    color:white;
+    font-size:50px;
+    
+}
+.white .fa-solid{
+    color:black;
+    font-size:50px;
+    
+}
+.black .fa-solid{
+    color:white;
+    font-size:50px;
+    
+}
