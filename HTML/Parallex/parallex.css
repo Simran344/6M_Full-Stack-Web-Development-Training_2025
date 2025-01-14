@@ -1,0 +1,27 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.a{
+    background-image:url("images/pexels-ugur-kahraman-1765266160-30207815.jpg");
+    height:600px;
+    background-size:100% 100%;
+    background-attachment:fixed;
+
+}
+.b{
+    background-image:url("images/pexels-souvenirpixels-414612.jpg");
+    height:600px;
+    background-size:100% 100%;
+    background-attachment:fixed;
+}
+.c{
+    background-image:url("images/pexels-apti-newim-459194673-30219390.jpg");
+    height:500px;
+    background-size:100% 100%;
+    background-attachment:fixed; 
+}
+.para{
+    background-color:black;
+    color:white;
+}
