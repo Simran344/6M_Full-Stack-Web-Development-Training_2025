@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        h1 {
+            text-align: center;
+            font-size: 7rem;
+        }
+
+        li{
+            margin-left:500px;
+        }
+
+       img{
+         transform: translateX(450px);
+         margin-top:20px;
+        
+       }
+       input
+       {
+        transform: translateX(450px);
+        width:60px;
+        margin-left:20px;
+       
+       }
+    </style>
+</head>
+
+<body>
+    
+        <h1>Guess the Movie</h1>
+        <ul type="disc">
+            <li>Its a bollywood movie</li><br>
+            <li>Its an action thriller movie</li><br>
+            <li>It released in 2025</li><br>
+            <li>Starring Shahid Kapoor</li>
+        </ul>
+
+        <img src="pics/fire.png" height="100px" width="100px" id="i2" class="cl1" >
+        <img src="pics/fire.png" height="100px" width="100px" id="i3" class="cl1">
+        <img src="pics/fire.png" height="100px" width="100px" id="i4" class="cl1" >
+        <img src="pics/fire.png" height="100px" width="100px" id="i5" class="cl1"><br>
+
+        <input type="text" id="1" class="class1" oninput="checkOut()">
+        <input type="text" id="2" class="class1" oninput="checkOut()">
+        <input type="text" id="3" class="class1" oninput="checkOut()">
+        <input type="text" id="4" class="class1" oninput="checkOut()">
+   
+
+        <script>
+            const s = document.getElementsByClassName("class1")
+            console.log(s.length)
+            const l = document.getElementsByClassName("cl1")
+            let index = 0
+            let var2 = "Deva"
+
+           function checkOut(){
+                  if(index<s.length)
+                  {    
+                       
+                       let var1=s[index].value;
+                       if(var1!==var2[index].toLowerCase())
+                       {
+                        l[index].src="pics/boom.png";
+                       }
+                       s[index].disabled=true;
+                       index++;
+                       s[index].focus();
+
+                  }
+           }
+
+</script>
+</body>
+
+</html>

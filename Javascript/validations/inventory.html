@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+</head>
+<body>
+    <label>Enter Product</label>
+    <input type="text" name="product" id="id1">
+    <button onclick="add()">Add</button><br>
+    <button onclick="show()">Show</button>
+    <div id="id2"></div>
+
+    <script>
+        let arr=[];
+        function add(){
+           
+            let var1=document.getElementById("id1").value;
+            arr.push(var1);
+            document.getElementById("id1").value=""
+           
+           
+           
+        }  
+        function show(){
+           for(let i of arr)
+            document.getElementById("id2").innerHTML+=i+"<br>"
+        } 
+    </script>
+</body>
+</html>

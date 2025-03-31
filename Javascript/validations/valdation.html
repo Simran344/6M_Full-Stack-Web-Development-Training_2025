@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    <style>
+        .error{
+            color:red
+        }
+    </style>
+</head>
+<body>
+    <form action="submit.html" onsubmit="return checkValidation()">
+        <label>Email</label>
+        <input type="text" id="id1" onblur="checkEmail()">
+        <span id="id3" class="error"></span> <br><br>
+        <label>password</label>
+        <input type="number" id="id2" onblur="checkPassword()">
+        <span id="id4" class="error"></span><br>
+        <button>Submit</button>
+    </form>
+    <script>
+        function checkEmail(){
+            let var1=document.getElementById("id1").value
+            
+         
+            let pattern=/^simran+\@+gmail+\.+com$/
+            if(pattern.test(var1)){
+                
+                document.getElementById("id3").innerHTML=""
+            
+             
+            }
+            else{
+                 document.getElementById("id3").innerHTML="invalid email"
+                
+                 
+            }
+        }
+           function checkPassword(){
+            let var2=document.getElementById("id2").value
+            let pattern1=/^2025$/
+
+            if(pattern1.test(var2))
+            {
+                document.getElementById("id4").innerHTML="";
+               
+
+            }
+            else{
+                document.getElementById("id4").innerHTML="invalid password";
+                console.log("false")
+                
+            }
+            
+        }
+        function checkValidation(){
+            let var1=document.getElementById("id1").value
+            let var2=document.getElementById("id2").value
+            let pattern1=/^2025$/
+            let pattern=/^simran+\@+gmail+\.+com$/
+            if(!pattern.test(var1) || !pattern1.test(var2))
+        {
+            return false;
+        }
+        }
+    </script>
+</body>
+</html>

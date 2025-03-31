@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gst calculator</title>
+    <style>
+        button:hover{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>GST Calculator</h1>
+    <button onclick="Calculator()">Calculate</button>
+    <p id="id1"></p>
+    <p id="id2"></p>
+    <p id="id3"></p>
+    <script>
+        function Calculator(){
+            var Amount=parseInt(prompt("Enter Amount"))
+            var gstRate=parseInt(prompt("Enter GST Rate "))
+            var gstAmount=(Amount*gstRate)/100
+            var totalPrice=gstAmount+Amount
+            document.getElementById("id1").innerText="Amount:"+Amount
+            document.getElementById("id2").innerText="GST AMOUNT:"+gstAmount
+            document.getElementById("id3").innerText="Total Price:"+totalPrice
+        }
+    </script>
+</body>
+</html>

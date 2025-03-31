@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <style>
+    table,
+    tr,
+    td {
+      border: 1px solid black;
+
+    }
+
+    #ic {
+      display: none
+    }
+
+    span {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container ">
+    <div class="row grid gap-0 column-gap-1 text-white">
+      <div class="col bg-secondary">
+        Admin
+      </div>
+      <div class="col bg-secondary">
+        Checkout
+      </div>
+      <div class="col bg-secondary">
+        Receipt
+      </div>
+    </div>
+    <div class="row grid gap-0 column-gap-1">
+      <div class="col" style="height:90vh;background-color: lightgray;">
+        <br>
+        <p class="text-center">Add a new Product</p>
+        <input type="text" id="id1" placeholder="Product Name">
+        <button onclick="addProduct()">Add Product</button><br><br>
+        <p>Select a product then add the price per unit</p>
+        <select style="width:150px;" id="id4">
+
+        </select>
+        <input type="number" id="id2" placeholder="Price">
+        <button class="ms-5" onclick="addPrice()">Add Price</button><br><br>
+        <span id="id6"></span>
+      </div>
+      <div class="col" style="height:90vh;background-color:lightgray">
+        <button style="margin-left:85px; margin-top:10px" onclick="transaction()">New Transaction</button><br><br>
+        <p>Select a product then add the number of units</p>
+        <select style="width:150px;margin-left:20px" id="id9"></select>
+        <label>Unit:</label>
+        <input type="text" style="width:50px" id="i10" value="0" readonly>
+        <button style="margin-left:100px" onclick="addButt()">Add to Cart</button><br><br>
+        <div class="row  grid gap-0 column-gap-0 mx-auto">
+          <div class="col ms-5">
+            <button class="w-100 ms-3 rounded-2" id="i1" class="class1" onclick="addCart('i1')">1</button>
+          </div>
+          <div class="col mx-auto me-4 ">
+            <button class="w-100 ms-0 me-4 rounded-2" id="i2" class="class1" onclick="addCart('i2')">2</button>
+          </div>
+        </div>
+        <div class="row  grid gap-0 column-gap-0 mx-auto">
+          <div class="col ms-5">
+            <button class="w-100 ms-3 rounded-2" id="i3" onclick="addCart('i3')">3</button>
+          </div>
+          <div class="col mx-auto me-4">
+            <button class="w-100 ms-0 me-3 rounded-2" id="i4" onclick="addCart('i4')">4</button>
+          </div>
+        </div>
+        <div class="row  grid gap-0 column-gap-0 mx-auto">
+          <div class="col ms-5 ">
+            <button class="w-100 ms-3 rounded-2" id="i5" onclick="addCart('i5')">5</button>
+          </div>
+          <div class="col  me-4">
+            <button class="w-100 ms-0  rounded-2" id="i6" onclick="addCart('i6')">6</button>
+          </div>
+        </div>
+        <div class="row  grid gap-0 column-gap-0 mx-auto">
+          <div class="col ms-5">
+            <button class="w-100 ms-3 rounded-2" id="i7" onclick="addCart('i7')">7</button>
+          </div>
+          <div class="col me-4 ">
+            <button class="w-100 ms-0 me-3 rounded-2" id="i8" onclick="addCart('i8')">8</button>
+          </div>
+
+        </div>
+        <div class="row mx-auto  w-50">
+          <div class="col ">
+            <button class="w-75 mx-auto ms-4 rounded-2" id="i9" onclick="addCart('i9')">9</button>
+          </div>
+        </div>
+        <button class="mt-5 w-25" style="margin-left:220px;" onclick="addPay()">Pay</button><br>
+        <span id="id8"></span>
+
+      </div>
+      <div class="col" style="height:90vh;background-color: lightgray;">
+        <div class="row bg-light mx-auto" id="ia">
+          <div class="col">Product</div>
+          <div class="col">$/Unit</div>
+          <div class="col">Unit(s)</div>
+          <div class="col">Price</div>
+        </div>
+        <div class="row mx-auto">
+          <div class="col bg-light mt-3" id="ic">
+            <p id="i11"></p>
+            <p id="i12"></p>
+            <table border="2" id="it" cellspacing="2px" cellpadding="1px">
+              <tr>
+                <td id="it1"></td>
+                <td id="it2"></td>
+                <td id="it3"></td>
+                <td id="it4"></td>
+              </tr>
+              <tr id="is">
+                <td id="it5"></td>
+                <td id="it6"></td>
+                <td id="it7"></td>
+                <td id="it8"></td>
+              </tr>
+            </table>
+            <p id="ib"></p>
+            <p id="ib1"></p>
+            <p id="ib2"></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    let arr = [];
+    let price = {};
+    let count=0;
+    function addProduct() {
+      let var1 = document.getElementById("id1").value
+
+      if (!arr.includes(var1)) {
+        arr.push(var1)
+        document.getElementById("id4").innerHTML += "<option selected>" + var1 + "</option"
+        document.getElementById("id6").innerHTML = "Product" + "-" + var1 + " " + "added in the list"
+
+      }
+      else {
+        document.getElementById("id6").innerHTML = "Product" + "-" + var1 + " " + "already added in the list"
+      }
+    }
+
+    function addPrice() {
+      let var3 = document.getElementById("id4").value
+      let var2 = document.getElementById("id2").value
+      price[var3] = var2
+      console.log(price)
+      document.getElementById("id6").innerHTML = "Successfully set " + var3 + " " + "price to" + " " + var2
+    }
+
+
+
+
+    function transaction() {
+      console.log(price)
+      document.getElementById("id8").innerHTML = "Product price updated"
+      for (let i = 0; i < arr.length; i++) {
+        document.getElementById("id9").innerHTML += "<option>" + arr[i] + "$" + price[arr[i]] + "/Unit"
+      }
+    }
+    let quan = []
+    let quant = {};
+    function addCart(num) {
+      let var1 = document.getElementById(num).innerHTML
+      document.getElementById("i10").value = var1
+      let s = document.getElementById("i10").value
+      quan.push(s)
+      for (let i in arr) {
+        quant[arr[i]] = quan[i]
+      }
+      console.log(quant)
+
+    }
+
+    function addButt() {
+      alert("Added in cart")
+    }
+    function addPay() {
+      count++;
+      if (count == 1)
+      { document.getElementById("ia").hidden = true
+      let j = 0;
+      document.getElementById("ic").style.display = "block"
+      let date = new Date()
+      document.getElementById("i11").innerHTML = "Date:" + date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear()
+      const c = date.getHours()
+      const a = (c >= 12) ? "PM" : "AM"
+      document.getElementById("i12").innerHTML = "Time:" + date.getHours() + ":" + date.getMinutes() + a
+      document.getElementById("it1").innerHTML = "Product"
+      document.getElementById("it2").innerText = "$/Unit"
+      document.getElementById("it3").innerText = "Unit(s)"
+      document.getElementById("it4").innerText = "Price"
+
+
+      for (let i = 0; i < arr.length; i++) {
+
+        document.getElementById("it5").innerHTML += arr[i] + "<br>"
+        document.getElementById("it6").innerHTML += price[arr[i]] + "<br>"
+        document.getElementById("it7").innerHTML += quan[i] + "<br>"
+        document.getElementById("it8").innerHTML += price[arr[i]] * quant[arr[i]] + "<br>"
+        j += (price[arr[i]] * quant[arr[i]])
+
+
+      }
+
+      document.getElementById("ib").innerHTML = "Total Price:" + j
+      let var6 = 200
+      document.getElementById("ib1").innerHTML = "Taxes:" + var6
+
+      let var7 = var6 + j
+
+      document.getElementById("ib2").innerHTML = "Amount Due:" + var7
+
+      console.log(count);
+      
+      
+    }
+   
+    
+   else if(count>1){
+    console.log("enter in else statement");
+    document.getElementById("ia").hidden = true
+    document.getElementById("is").remove()
+      let j = 0;
+   
+      
+      let date = new Date()
+      document.getElementById("i11").innerHTML = "Date:" + date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear()
+      const c = date.getHours()
+      const a = (c >= 12) ? "PM" : "AM"
+      document.getElementById("i12").innerHTML = "Time:" + date.getHours() + ":" + date.getMinutes() + a
+      document.getElementById("it1").innerHTML = "Product"
+      document.getElementById("it2").innerText = "$/Unit"
+      document.getElementById("it3").innerText = "Unit(s)"
+      document.getElementById("it4").innerText = "Price"
+      document.getElementById("ib").innerHTML = "Total Price:" + j
+      let var6 = 0
+      document.getElementById("ib1").innerHTML = "Taxes:" + var6
+
+      let var7 = var6 + j
+
+      document.getElementById("ib2").innerHTML = "Amount Due:" + var7
+      console.log(count);
+   }
+  }
+  </script>
+</body>
+
+</html>

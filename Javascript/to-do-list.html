@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do-list</title>
+    <style>
+       .container{
+        box-shadow:5px 5px 5px #642b2b;
+        text-align:center;
+        margin-top:200px;
+        width:300px;
+        margin-left:600px;
+         min-height:150px;
+         border:2px solid black;
+         background-color:#964d4d;
+       } 
+       input{
+        height:30px;
+        border:1px solid black;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="i1">
+        <h1>TO DO-LIST</h1>
+        <input type="text" id="id1" placeholder="Add a new to-do">
+        <button onclick="addItems()" style="height:35px;background-color: blue;color:white">Add</button>
+
+    </div>
+
+    <script>
+        function addItems() {
+            let var1 = document.getElementById("id1").value
+            document.getElementById("id1").value=""
+            let div1 = document.createElement("div")
+            div1.style.display = "flex"
+            div1.style.width="240px"
+            div1.style.backgroundColor="#642b2b"
+            div1.style.height="30px"
+            div1.style.margin="10px 0px 5px 40px"
+            
+            div1.style.justifyContent="space-between"
+           
+            let div2 = document.createElement("div")
+            div2.style.alignSelf="center"
+            div2.style.color="white"
+            div2.innerHTML += var1
+           
+           
+            let button1 = document.createElement("button")
+            div1.appendChild(div2)
+            button1.innerHTML = "Edit"
+            button1.style.color="white"
+            button1.style.backgroundColor="blue"
+            div1.appendChild(button1)
+            let button2 = document.createElement("button")
+
+            button2.innerHTML = "Delete"
+            button2.style.color="red"
+            button2.style.backgroundColor="blue"
+            div1.appendChild(button2)
+            document.getElementById("i1").appendChild(div1)
+            button1.addEventListener("click", () => {
+                let var2 = prompt("enter edit list name")
+                div2.innerText = var2
+
+
+            })
+            button2.addEventListener("click",()=>{
+                div1.remove()
+               
+            })
+        }
+    </script>
+</body>
+
+</html>

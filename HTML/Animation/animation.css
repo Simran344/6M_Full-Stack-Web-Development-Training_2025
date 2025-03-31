@@ -1,0 +1,16 @@
+.a{
+    width:100px;
+    height:100px;
+    position:relative;
+    animation:ani1 3s infinite;
+}
+@keyframes ani1{
+    from{
+        top:0px;
+        left:0px;
+    }
+    to{
+        top:0px;
+        left:1000px;
+    }
+}

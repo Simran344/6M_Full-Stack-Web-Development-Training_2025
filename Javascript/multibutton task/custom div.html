@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Div</title>
+</head>
+<body>
+   
+    <label>Enter Color</label>
+    <input type="text" id="color"><br>
+    <label>Enter background color</label>
+    <input type="text" id="bgcolor"><br>
+    <label>Height</label>
+    <input type="text" id="height"><br>
+    <label>Width</label>
+    <input type="text" id="width"><br>
+    <label>Enter text</label>
+    <input type="text" id="tex"><br>
+    <button onclick="customDiv()">Click</button>
+    <div id="id1"></div>
+    <script>
+        function customDiv()
+        {
+             var col=document.getElementById("color").value
+             var bgcolor=document.getElementById("bgcolor").value
+             var height=document.getElementById("height").value
+             var width=document.getElementById("width").value
+             var text=document.getElementById("tex").value
+
+             document.getElementById("id1").style.color=col
+             document.getElementById("id1").style.backgroundColor=bgcolor
+             document.getElementById("id1").style.height=height
+             document.getElementById("id1").style.width=width
+             document.getElementById("id1").innerHTML=text
+            
+        }
+    </script>
+</body>
+</html>

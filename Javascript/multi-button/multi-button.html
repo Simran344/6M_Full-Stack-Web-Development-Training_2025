@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-button</title>
+    <link rel="stylesheet" href="multi-button.css">
+</head>
+<body>
+    <div class="c1">
+        <input type="text" id="i1">
+        <input type="text" id="i2">
+    </div>
+    <div class="c2">
+        <button onclick="textCopy()">Button1</button>
+        <button onclick="aler()">Button2</button>
+        <button onclick="copy()">Button3</button>
+        <button onclick="concat()">Button4</button>
+        <button onclick="image()">Button5</button>
+    </div>
+    <div class="c3">
+        <div id="i3">HELLO</div>
+        <div id="i4">BYE</div>
+    </div>
+    <script>
+        function textCopy(){
+            var s1=document.getElementById("i1").value
+            document.getElementById("i2").value=s1
+        }
+        function aler(){
+           
+            var n=document.getElementById("i1").value
+            alert(n)
+            var s3=document.getElementById("i3").innerHTML
+            alert(s3)
+            var s4=document.getElementById("i4").innerText
+            alert(s4)
+        }
+        function copy(){
+            var name=document.getElementById("i1").value
+            document.getElementById("i4").innerText=name
+        }
+        function concat(){
+            var name=document.getElementById("i1").value
+            var name1=document.getElementById("i2").value
+            document.getElementById("i3").innerText="hello"+name+name1
+        }
+        function image(){
+            document.getElementById("i4").style.backgroundImage="url('pics/flower1.jpg')"
+            document.getElementById("i1").type="radio"
+            document.getElementById("i2").type="checkbox"
+            console.log("simran")
+        }
+    </script>
+</body>
+</html>

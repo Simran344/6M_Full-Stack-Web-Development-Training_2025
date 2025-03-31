@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multi-image</title>
+    <style>
+        
+        #fl1{
+            margin-top:30px;
+            width:200px;
+            position:absolute;
+            margin-left:400px;
+        }
+        #i2{
+            display:flex;
+            justify-content:space-evenly;
+            align-items:center;
+            margin-top:90px;
+            border-style:solid;
+            border-color:red;
+            height:600px;
+            width:900px;
+            margin-left:120px;
+        }
+        #fl1{
+            height:200px;
+            width:200px;
+        }
+        #i2 img{
+            height:200px;
+            width:200px;
+            margin-top:250px;
+
+        }
+    </style>
+</head>
+<body>
+    
+        <img src="pics/flower1.jpg" id="fl1">
+        <div id="i2">
+            <img src="pics/flower2.jpg" onmouseover="image('pics/flower2.jpg')" onmouseout="image('pics/flower1.jpg')" id="fl2">
+            <img src="pics/flower3.jpg" onmouseover="image('pics/flower3.jpg')" onmouseout="image('pics/flower1.jpg')" id="fl3">
+            <img src="pics/flower4.jpg" onmouseover="image('pics/flower4.jpg')" onmouseout="image('pics/flower1.jpg')" id="fl4">
+            <img src="pics/flower5.jpg" onmouseover="image('pics/flower5.jpg')" onmouseout="image('pics/flower1.jpg')" id="fl5">
+        </div>
+    </div>
+  
+    <script>
+        function image(x){
+           document.getElementById("fl1").src=x;
+        }
+    </script>
+</body>
+</html>
