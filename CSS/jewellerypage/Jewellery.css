@@ -1,0 +1,181 @@
+*{
+   margin:0px;
+   padding:0px;
+}
+nav{
+    height:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+   
+}
+nav .b{
+    
+    color:chocolate;
+}
+nav  ul{
+    
+    display:flex;
+    list-style:none;
+    padding-right:20px;
+   
+    
+}
+nav ul li{
+    margin:0px 8px;
+}
+nav ul li a{
+    text-decoration:none;
+    color:black;
+}
+nav ul li a:hover{
+    color:blue;
+}
+.img{
+    background-image: url("pics/home-2-hotspot-img1.jpg");
+    height:650px;
+    background-size:100% 100%;
+}
+.img h2{
+    position:relative;
+    top:500px;
+    left:700px;
+    height:40px;
+    width:140px;
+    background-color: orangered;
+    color:white;
+    padding-left:23px;
+    padding-top:10px;
+}
+.img h2:hover{
+    color:blue;
+}
+.row2{
+    height:530px;
+    margin-top:20px;
+}
+.row2 .head{
+    height:50px;
+    text-align:center;
+}
+.row2 .head .head1{
+    color:chocolate;
+}
+.row2 .head2{
+    height:50px;
+    text-align:center;
+}
+.row2 .head3{
+    height:50px;
+    display:flex;
+    justify-content:space-evenly;
+}
+.row2 .h{
+    color:chocolate;
+}
+.row2 .necklace{
+    height:230px;
+    justify-content:space-evenly;
+    display:flex;
+}
+.row2 .desc{
+    height:50px;
+    justify-content:space-evenly;
+    display:flex;
+   
+}
+
+.row2 .price{
+    height:40px;
+    display:flex;
+    justify-content:space-between;
+    width:1050px;
+    margin-left:230px;
+}
+.row2 .price .p1{
+    font-size:25px;
+    color:chocolate;
+}
+.row2 .add{
+    height:60px;
+    display:flex;
+    justify-content:space-between;
+    width:1030px;
+    margin-left:240px;
+    
+}
+.row2 .add .add1{
+    height:30px;
+    width:85px;
+    background-color: orangered;
+    color:white;
+    padding-top:10px;
+    padding-left:10px;
+}
+.row2 .img1{
+    
+    height:500px;
+    
+}
+.row2 .img1 .ig{
+    background-attachment: fixed;
+    background-size:cover;
+    height:480px;
+    background:linear-gradient(rgba(210,105,30,0.5),rgba(210,105,30,0.5)),url("pics/bg-header.jpg");
+}
+.row2 .hea{
+    height:40px;
+    text-align:center;
+    
+}
+.row2 .hea h1{
+    color:chocolate;
+}
+.row2 .table{
+    height:360px;
+    margin-left:100px;
+    width:1300px;
+}
+#p1{
+    background-color: silver;
+}
+#p2{
+    background-color: silver;
+}
+#id0{
+    padding-left:30px;
+    text-align: justify;
+}
+#id1{
+    padding-top:50px;
+    padding-left:90px;
+}
+.row2 .feedback{
+    height:130px;
+    background-color: chocolate;
+   
+    
+}
+.row2 .feedback .f1{
+    height:50px;
+    text-align:center;
+    padding-top:30px;
+}
+.row2 .feedback .f2{
+    text-align:center;
+}
+.row2 .copy{
+    height:50px;
+    
+}
+.row2 .copy .c1{
+    text-align:center;
+}
+.row2 .copy .c2{
+    color:chocolate;
+    text-align:center;
+}
+
+
+
+

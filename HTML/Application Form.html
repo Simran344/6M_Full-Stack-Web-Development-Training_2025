@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<!-- start filling details in application form-->
+<body>
+    <table width="1100px" align="center">
+        <tr>
+            <td align="center">
+                <h2>Application Form</h2>
+            </td>
+        </tr>
+    </table>
+    <form>
+        <!--start filling personal details-->
+        <fieldset>
+            <legend>Personal Details</legend>
+            <table  width="1100px" align="center">
+    
+                <tr>
+                    <td>
+                        <label>Applicant's full name</label>
+                    </td>
+                    <td>
+                        <select>
+                        <option selected>--Select--</option>
+                        </select>
+                        <input type="text" name="username">
+                    </td>
+            
+                    <td>
+                        <label>Care of</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="consent"  value="Parents"checked>Parents
+                        <input type="radio" name="consent" value="Gaurdian">Guardian
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Father's Name</label>
+                    </td>
+                    <td>
+                        <select disabled>
+                        <option>Mr.</option>
+                        </select>
+                        <input type="text" name="Father's name">
+                    </td>
+                    <td>
+                        <label>Mother's Name</label>
+                    </td>
+                    <td>
+                        <select disabled>
+                        <option>Mrs.</option>
+                        </select>
+                        <input type="text" name="Mother's name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Gender</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="Gender" value="1">Male
+                        <input type="radio" name="Gender" value="2">Female
+                        <input type="radio" name="Gender" value="3">Others
+                    </td>
+                    <td>
+                        <label>Date of Birth</label>
+                    </td>
+                    <td>
+                        <input type="date" name="dob">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Marital Status</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option selected>--Select--</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label>Category</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option selected>--Select--</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Handicapped</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="handicapped" checked>No
+                        <input type="radio" name="handicapped">Yes
+                    </td>
+                    <td>
+                        <label>Ex-Serviceman</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="serviceman" checked>No
+                        <input type="radio" name="serviceman">Yes
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>EWS</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="EWS" checked>No
+                        <input type="radio" name="EWS">Yes
+                    </td>
+                    <td>
+                        <label>Religion</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option selected>--Select--</option>
+                        </select>
+                    </td>
+                </tr>
+    
+            </table>
+            <!--done personal details filling-->
+        </fieldset>
+        <!--start fill contact details-->
+        <fieldset>
+                <legend>Contact Details</legend>
+                <table width="1100px" align="center">
+                    <tr>
+                        <td>
+                            <label>Mobile Number</label>
+                        </td>
+                        <td>
+                            <input type="tel" name="contact" minlength="10" maxlength="10">
+                        </td>
+                        <td>
+                            <label>Email ID</label>
+                        </td>
+                        <td>
+                            <input type="email" name="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <label>Address Line 1</label>
+                        </td>
+                        <td>
+                        <input type="text" name="address">
+                        </td>
+                        <td>
+                        <label>Address Line 2</label>
+                        </td>
+                        <td>
+                        <input type="text" name="address 2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>City</label>
+                        </td>
+                        <td>
+                            <input type="text" name="city">
+                        </td>
+                        <td>
+                            <label>State</label>
+                        </td>
+                        <td>
+                            <select>
+                                <option selected>--Select--</option>
+                            </select>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Pin Code</label>
+                            </td>
+                            <td>
+                                <input type="text" name="pin" minlength="6" maxlength="6">
+                            </td>
+                        </tr>
+                </table>
+                <!--done contact details filling-->
+        </fieldset>
+        <!--start filling Qualification details-->
+        <fieldset>
+                <legend>Qualification Details</legend>
+                <table width="1100px" align="center">
+                    <tr>
+                        <td>
+                            <label>Sr No.</label>
+                        </td>
+                        <td>
+                            <label>Qualification</label>
+                        </td>
+                        <td>
+                            <label>Board/University</label>
+                        </td>
+                        <td>
+                            <label>Passing Year</label>
+                        </td>
+                        <td>
+                            <label>Max Marks</label>
+                        </td>
+                        <td>
+                            <label>Marks Obtain</label>
+                        </td>
+                        <td>
+                            <label>Percentage</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>1</label>
+                        </td>
+                        <td>
+                            <select>
+                                <option selected>--Select--</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" name="board">
+                        </td>
+                        <td>
+                            <input type="number" name="passing year">
+                        </td>
+                        <td>
+                            <input type="number" name="Max Marks">
+                        </td>
+                        <td>
+                            <input type="number" name="Marks obtain">
+                        </td>
+                        <td>
+                            <input type="number" name="Percentage">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <label>2</label>
+                        </td>
+                        <td>
+                            <select>
+                                <option selected>--Select--</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" name="board">
+                        </td>
+                        <td>
+                            <input type="number" name="passing year">
+                        </td>
+                        <td>
+                            <input type="number" name="Max Marks">
+                        </td>
+                        <td>
+                            <input type="number" name="Marks obtain">
+                        </td>
+                        <td>
+                            <input type="number" name="Percentage">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>3</label>
+                        </td>
+                        <td>
+                            <select>
+                                <option selected>--Select--</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" name="board">
+                        </td>
+                        <td>
+                            <input type="number" name="passing year">
+                        </td>
+                        <td>
+                            <input type="number" name="Max Marks">
+                        </td>
+                        <td>
+                            <input type="number" name="Marks obtain">
+                        </td>
+                        <td>
+                            <input type="number" name="Percentage">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>4</label>
+                        </td>
+                        <td>
+                            <select>
+                                <option selected>--Select--</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" name="board">
+                        </td>
+                        <td>
+                            <input type="number" name="passing year">
+                        </td>
+                        <td>
+                            <input type="number" name="Max Marks">
+                        </td>
+                        <td>
+                            <input type="number" name="Marks obtain">
+                        </td>
+                        <td>
+                            <input type="number" name="Percentage">
+                        </td>
+                    </tr>
+                </table>
+                <!--done qualification details filling-->
+            </fieldset>
+            <!--start filling language knowledge details-->
+            <fieldset>
+                <legend>Language Knowledge</legend>
+                <table width="1100px" align="center">
+                    <tr>
+                        <td>
+                        <label>Language</label>
+                        </td>
+
+                        <td>
+                        <label>Reading</label>
+                        </td>
+
+                        <td>
+                        <label>Writing</label>
+                        </td>
+
+                        <td>
+                        <label>Spoken</label>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Hindi</label>
+                        </td>
+
+                        <td>
+                            <input type="checkbox" name="reading">
+                        </td>
+
+                        <td>
+                            <input type="checkbox" name="writing">
+                        </td>
+
+                        <td>
+                            <input type="checkbox" name="spoken">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>English</label>
+                        </td>
+
+                        <td>
+                            <input type="checkbox" name="reading">
+                        </td>
+
+                        <td>
+                            <input type="checkbox" name="writing">
+                        </td>
+
+                        <td>
+                            <input type="checkbox" name="spoken">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Urdu</label>
+                        </td>
+
+                        <td>
+                            <input type="checkbox" name="reading">
+                        </td>
+
+                        <td>
+                            <input type="checkbox" name="writing">
+                        </td>
+
+                        <td>
+                            <input type="checkbox" name="spoken">
+                        </td>
+
+                    </tr>
+                </table>
+                <!--done Language knowledge filling details-->
+            </fieldset>
+    <!--start filling identification details-->
+    <fieldset>
+        <legend>Identification Details</legend>
+        <table width="1100px" align="center">
+            <tr>
+                <td>
+                    <label>Aadhar Card Number</label>
+                </td>
+                <td>
+                    <input type="text" name="adhar number"  minlength="12" maxlength="12">
+                </td>
+                <td>
+                    <label>PAN Card Number</label>
+                </td>
+                <td>
+                    <input type="text" name="pan number" minlength="10" maxlength="10">
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label>Upload Photo</label>
+                </td>
+
+                <td>
+                    <input type="file" value="No file chosen">
+                </td>
+                <td>
+                    <label>Upload Signatures</label>
+                </td>
+                <td>
+                    <input type="file" value="No file chosen">
+                </td>
+            </tr>
+        </table>
+        <!--done identification details filling-->
+    </fieldset>
+        <table width="1100px" align="center">
+            <tr>
+                <td align="center">
+                    <!--click submit button after filling complete details-->
+                    <button type="Submit">Submit</button>
+                   
+                    <button type="Back">Back</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <!--completely done filling details in application form-->
+
+</body>
+</html>

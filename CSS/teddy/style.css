@@ -1,0 +1,160 @@
+
+.main{
+    width:500px;
+    height:600px;
+    background-color:white;
+    margin:10px 300px;
+    padding-left:200px;
+    padding-top:100px;
+}
+.main .ear{
+    width:200px;
+    height:100px;
+    display:flex;
+    justify-content:space-between;
+    float:left;
+    position:absolute;
+    z-index:0;
+}
+.main .ear .ear1{
+    width:50px;
+    height:50px;
+    border-width:5px;
+    border-radius:50%;
+    border-color:salmon;
+    background-color: salmon;
+    border-style:solid;
+    
+}
+.main .ear .ear2{
+    width:50px;
+    height:50px;
+    border-width:5px;
+    border-radius:50%;
+    border-color:salmon;
+    background-color: salmon;
+    border-style:solid;
+}
+.main .face{
+    width:200px;
+    height:200px;
+    border-style:solid;
+    border-radius: 50%;
+    border-color:salmon;
+    background-color:salmon;
+    border-width:5px;
+    margin-top:10px;
+    position:relative;
+    z-index:1;
+}
+.main .face .eyes{
+    height:40px;
+    width:80px;
+    margin:60px 55px;
+    display:flex;
+    justify-content:space-between;
+    
+    
+}
+
+.main .face .eyes .eyes1{
+    width:20px;
+    height:20px;
+    border-style:solid;
+    border-color:black;
+    background-color: black;
+    border-radius:50%;
+    border-width:5px;
+    float:left;
+   
+    
+}
+.main .face .eyes .eyes2{
+    width:20px;
+    height:20px;
+    border-style:solid;
+    border-color:black;
+    background-color: black;
+    border-radius:50%;
+    border-width:5px;
+    float:left
+}
+.main .face .mouth{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border-style:solid;
+    border-color:red;
+    background-color: red;
+    margin:-50px 70px;
+    display:flex;
+    justify-content:space-between;
+}
+.main .face .mouth .mouth1{
+    width:10px;
+    height:10px;
+    border-style:solid;
+    border-color:black;
+    background-color: black;
+    border-radius: 50%;
+    float:left;
+    margin:20px 6px;
+}
+.main .face .mouth .mouth2{
+    width:10px;
+    height:10px;
+    border-style:solid;
+    border-color:black;
+    background-color: black;
+    border-radius: 50%;
+    float:left;
+    margin:20px 5px;
+}
+.main .stomach{
+    width:300px;
+    height:300px;
+    border-style:solid;
+    background-color:red;
+    border-color:red;
+    border-radius:50%;
+    border-width:5px;
+    margin-top:-40px;
+    margin-left:-40px;
+}
+.main .foot{
+    width:200px;
+    height:70px;
+   
+    float:left;
+    margin-top:-40px;
+    display:flex;
+    justify-content:space-between;
+}
+.main .foot .foot1{
+    width:50px;
+    height:50px;
+    border-style:solid;
+    border-color:salmon;
+    border-radius:50%;
+    background-color:salmon;
+    margin-left:30px;
+
+}
+.main .foot .foot2{
+    width:50px;
+    height:50px;
+    border-style:solid;
+    border-color:salmon;
+    border-radius:50%;
+    background-color:salmon;
+    margin-left:30px;
+
+}
+.main .triangle{
+    height:0px;
+    width:0px;
+    border-left:transparent 100px solid;
+    border-top:transparent 100px solid;
+    border-bottom:salmon 100px solid;
+    margin:-230px 210px;
+}

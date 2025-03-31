@@ -1,0 +1,162 @@
+*{
+    margin:0px;
+    padding:0px;
+
+}
+.navbar{
+    background-color:#16213E;
+}
+.nav-link{
+    color:white;
+    font-size:1 rem;
+    font-weight:600;
+}
+.nav-link:hover{
+    background-color:#DC4C64;
+    
+}
+.navbar-brand{
+    background-color: #DC4C64;
+    width:80px
+}
+.text{
+    background-color:#1A1A2E;
+   
+    
+}
+.cols{
+    
+   /* padding-left:130px;*/
+    color:white;
+}
+.text1{
+    border-style:solid;
+    border-color:#DC4C64;
+    
+    border-radius: 50%;
+    border-width: 20px;
+    overflow: hidden;
+}
+#h{
+    color:#DC4C64;
+}
+
+
+.text .text1{
+    animation:ani 2s linear forwards;
+    position:relative;
+}
+@keyframes ani{
+    from{
+        right:-100px
+    }
+    to{
+        right:5px;
+       
+    }
+}
+.text .cols{
+    animation:an2 2s linear forwards;
+    position:relative;
+}
+@keyframes an2{
+    from{
+        left:-130px;
+    }
+    to{
+       
+        left:120px;
+        position: static;
+    }
+}
+.text3{
+    background-color: #16213E;
+ 
+    
+}
+#id3{
+    color:white;
+    
+    
+}
+.i1{
+    padding-top:50px;
+   
+}
+.text4 h1{
+    color:white;
+    text-decoration: underline;
+   
+   
+    text-align: center;
+}
+
+.i1 img{
+    border-radius: 50% 0%;
+    border-style:solid;
+    border-color: white;
+    border-width: 20px;
+}
+.text4 .bi-linkedin{
+    padding-left:240px;
+    color:white;
+   
+}
+.text4 i{
+    margin:4px;
+    color:white;
+}
+i:hover{
+    color:#DC4C64;
+}
+.text4 .btn{
+   margin-left:230px;
+    
+}
+.text4 .btn:hover{
+    box-shadow: 0px 4px white;
+}
+.text5{
+    background-color: #1A1A2E;
+    
+  
+}
+.tv h1{
+    color:white;
+    text-decoration:underline;
+    text-align:center;
+}
+.card-hover:hover {
+    transform: scale(0.9);
+}
+
+.text7{
+    background-color:#16213E
+  
+   
+}
+.text7 .tx h1{
+    color:white;
+    text-align: center;
+    text-decoration: underline;
+}
+.text6{
+    background-color: #1A1A2E;
+}
+.text6  .vy h1{
+    color:white;
+    text-align: center;
+    text-decoration: underline;
+} 
+
+.text8{
+    background-color: #1A1A2E;
+}
+.text8 span{
+    color:#1A1A2E;
+}
+.text8 i{
+    margin:5px;
+}
+
+
